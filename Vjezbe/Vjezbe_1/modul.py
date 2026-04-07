@@ -1,3 +1,3 @@
-import Kinematika.py.py
+import Kinematika.py
 
 jednoliko_gibanje()
