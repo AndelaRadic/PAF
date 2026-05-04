@@ -24,7 +24,7 @@ def r_kut(dq, dr, dv, dt, E):
     k3v = akc(dq, dv + 0.5*dt*k2v, E)
     k3r = dv + 0.5*dt*k2v
 
-    k4v = akc(q, dv + dt*k3v, E)
+    k4v = akc(dq, dv + dt*k3v, E)
     k4r = dv + dt*k3v
 
     brzina = dv + (dt/6)*(k1v + 2*k2v + 2*k3v + k4v)
