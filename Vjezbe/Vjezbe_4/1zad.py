@@ -12,10 +12,10 @@ dt = 1e-12
 raz=20000
 def akc(dq,dv,E):
     F = E + np.cross(dv, B)
-    return (q/m) * F
+    return (dq/m) * F
 
 def r_kut(dq, dr, dv, dt, E):
-    k1v = akc(q, dv, E)
+    k1v = akc(dq, dv, E)
     k1r = dv
 
     k2v = akc(dq, dv + 0.5*dt*k1v, E)
